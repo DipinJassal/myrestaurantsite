@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,html{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav.navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar a.navbar-brand {
+    font-size: 30px;
+    color: white;
+}
+
+.navbar a.navbar-brand:hover{
+    font-size: 30px;
+    color: red;
+
+}
+
+.navbar a.navbar-brand span{
+    color: red;
+}    
+.navbar-nav{
+    margin-left: auto;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-item a.nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-item a.nav-link:hover{
+    color: red;
+}
+
+
+.home{
+    display: flex;
+    background: url('../img/home4.jpg') no-repeat center;
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    min-height: 500px;
+    width: auto;
+    background-attachment: fixed;
+    line-height: 1.7;
+    
+}
+
+.home .max-width{
+    margin: auto;
+    
+}
+
+.home .home-content .text-1{
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 10vh;
+}
+.home .home-content .text-2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.home .home-content .btn{
+    text-decoration: none;
+    font-size: 30px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.home .home-content .btn:hover{
+    background-color: red;
+    border-color: red;
+}
+
+.about{
+    display: flex;
+    background: url('../img/home3.jpg') no-repeat center;
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    min-height: 500px;
+    width: auto;
+    background-attachment: fixed;
+    line-height: 1.7;
+    
+}
+
+.about .max-width{
+    margin: auto;
+    
+}
+
+.about .about-content .text-1{
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 10vh;
+}
+.about .about-content .text-2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.menu{
+    min-height: 500px;
+    width: auto;
+    padding: 0px 50px;
+}
+
+
+.menu .title{
+    text-align: center;
+    font-size: 50px;
+    padding: 70px 0px;
+    color: gold;
+}
+
+ .menu1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-menu{
+    flex-basis: 500px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.single-menu:nth-child(5),.single-menu:nth-child(6){
+    border-bottom: 0;
+}
+
+.single-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.single-menu img{
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+
+.single-menu h4{
+    text-transform: capitalize;
+    font-size: 22px;
+    color: gold;
+}
+
+.single-menu h4 span{
+    float: right;
+    font-size: 22px;
+    color: red;
+}
+
+.contact {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color:white;
+    word-spacing: 2px;
+    font-size: 20px;
+}
+@media only screen and (max-width:760px){
+    .home{
+        line-height: 1.7;
+    }
+    .home .home-content .text-1{
+        font-size: 40px;
+        font-weight: 500;
+        padding-top: 5vh;
+    }
+    .home .home-content .text-2{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .home .home-content .btn{
+        text-decoration: none;
+        font-size: 20px;
+        border: 1px solid white;
+        color: white;
+        border-radius: 20px;
+        padding: 10px 15px;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+
+    .about{
+        line-height: 1.7;
+    }
+    
+    .about .about-content .text-1{
+        font-size: 40px;
+        font-weight: 500;
+        padding-top: 5vh;
+    }
+    .about .about-content .text-2{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .single-menu{
+        flex-basis: 300px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .single-menu h4{
+        text-transform: capitalize;
+        font-size: 18px;
+        margin-right: -30px;
+        color: gold;
+    }
+    
+    .single-menu h4 span{
+        float: right;
+        font-size: 18px;
+        color: red;
+    }
+
+    .contact {
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color:white;
+        word-spacing: 2px;
+        font-size: 10px;
+        font-size: 25px;
+    }
+}
